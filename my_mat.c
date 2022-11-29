@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#define SIZE 4
+#define SIZE 10
 
 int a[SIZE][SIZE];
 
@@ -35,19 +35,6 @@ void floyd_warshall()
     }
 }
 
-void printMat()
-{
-
-    for (int i = 0; i < SIZE; i++)
-    {
-        for (int j = 0; j < SIZE; j++)
-        {
-            printf("%d ", a[i][j]);
-        }
-        printf("\n");
-    }
-}
-
 void scan_matriza()
 {
 
@@ -59,9 +46,7 @@ void scan_matriza()
             scanf("%d", &a[i][j]);
         }
     }
-    printMat();
     floyd_warshall();
-    printMat();
 }
 
 void path_exist()
