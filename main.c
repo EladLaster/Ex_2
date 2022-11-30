@@ -1,20 +1,26 @@
-#include<stdio.h>
-#include"my_mat.h"
+#include <stdio.h>
+#include "my_mat.h"
 
-int main(){
-    
-    char menu;
+int main()
+{
+    char c;
+    while (scanf("%c", &c) != EOF || c != 'D')
+    {
+        switch (c)
+        {
+        case 'A':
+            scan_matriza();
+            break;
 
-    while(scanf("%c",&menu)!=EOF && menu!='D'){
+        case 'B':
+            path_exist();
+            break;
 
-        if(menu=='A')  scan_matriza();
-        
-        if(menu=='B') path_exist();
-        
-        if(menu=='C') shortest_path();
-        
+        case 'C':
+            shortest_path();
+            break;
+        }
     }
-        
-    
+
     return 0;
-    }
+}
