@@ -54,9 +54,9 @@ void path_exist()
     int i, j;
     scanf("%d %d", &i, &j);
     if (a[i][j] == 0)
-        printf("false\n");
+        printf("False\n");
     else
-        printf("true\n");
+        printf("True\n");
 }
 
 void shortest_path()
