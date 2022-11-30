@@ -4,7 +4,7 @@
 int main()
 {
     char c;
-    while (scanf("%c", &c) != EOF || c != 'D')
+    while (scanf("%c", &c) != EOF && c != 'D')
     {
         switch (c)
         {
