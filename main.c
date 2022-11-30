@@ -7,11 +7,11 @@ int main(){
 
     while(scanf("%c",&menu)!=EOF && menu!='D'){
 
-        if(menu=='A')  makeMat();
+        if(menu=='A')  scan_matriza();
         
-        if(menu=='B') isConnect();
+        if(menu=='B') path_exist();
         
-        if(menu=='C') shortestPath();
+        if(menu=='C') shortest_path();
         
     }
         
